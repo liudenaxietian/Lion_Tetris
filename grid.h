@@ -4,6 +4,7 @@
 #include "raylib.h"
 #include <iostream>
 #include <vector>
+#include "color.h"
 
 class Grid
 {
@@ -15,11 +16,10 @@ public:
   int grid[20][10];
 
 public:
-  std::vector<Color> getCellColor();
   int rowNum;
   int colNum;
   int cellSize;
-  std::vector<Color> Colors;
+  std::vector<Color> colors;
 };
 
 #endif //__GRID_H__

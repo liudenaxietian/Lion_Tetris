@@ -1,5 +1,5 @@
 #include <raylib.h>
-#include "grid.h"
+#include "game.h"
 
 int main()
 {
@@ -7,13 +7,13 @@ int main()
     Color darkBlue = Color{44, 44, 127, 255};
     InitWindow(300, 600, "Lion");
     SetTargetFPS(60);
-    Grid grid = Grid();
+    Game game = Game();
 
     while (WindowShouldClose() == false)
     {
         BeginDrawing();
         ClearBackground(darkBlue);
-        grid.Draw();
+        game.Draw();
 
         EndDrawing();
     }
